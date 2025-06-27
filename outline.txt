@@ -1,0 +1,58 @@
+KRBF/
+├── backend/
+│   ├── krb_project/             # Django project settings, root URLConf
+│   │   ├── settings.py
+│   │   ├── urls.py
+│   │   └── wsgi.py
+│   ├── apps/                    # Django apps (e.g., core, news, events, teams)
+│   │   ├── core/                # Common models, utilities, API views
+│   │   │   ├── models.py
+│   │   │   ├── views.py
+│   │   │   ├── serializers.py
+│   │   │   └── urls.py
+│   │   ├── news/
+│   │   │   ├── models.py
+│   │   │   ├── views.py
+│   │   │   ├── serializers.py
+│   │   │   └── urls.py
+│   │   ├── events/
+│   │   │   ├── models.py
+│   │   │   ├── views.py
+│   │   │   ├── serializers.py
+│   │   │   └── urls.py
+│   │   └── teams/
+│   │       ├── models.py
+│   │       ├── views.py
+│   │       ├── serializers.py
+│   │       └── urls.py
+│   ├── manage.py
+│   └── requirements.txt         # Python dependencies (Django, djangorestframework, etc.)
+├── frontend/
+│   ├── public/                  # Static assets for React (index.html, favicon)
+│   ├── src/
+│   │   ├── components/          # Reusable UI components (e.g., Button, Card, Navbar, Footer)
+│   │   │   ├── Layout.jsx
+│   │   │   ├── Navbar.jsx
+│   │   │   ├── Footer.jsx
+│   │   │   ├── NewsCard.jsx
+│   │   │   └── EventCard.jsx
+│   │   ├── pages/               # Page-level components (e.g., HomePage, AboutPage, NewsListPage)
+│   │   │   ├── HomePage.jsx
+│   │   │   ├── AboutPage.jsx
+│   │   │   ├── NewsListPage.jsx
+│   │   │   ├── NewsDetailPage.jsx
+│   │   │   ├── EventsListPage.jsx
+│   │   │   └── ContactPage.jsx
+│   │   ├── api/                 # Centralized API service calls (e.g., axios instances)
+│   │   │   └── krbApi.js
+│   │   ├── App.js               # Main React application component (routing setup)
+│   │   ├── index.js             # React entry point
+│   │   ├── index.css            # Main CSS file (Tailwind directives, custom base styles)
+│   │   └── assets/              # Images, icons specific to frontend
+│   ├── package.json             # Frontend dependencies (react, react-dom, react-router-dom, axios, tailwindcss, postcss, autoprefixer)
+│   ├── tailwind.config.js       # Tailwind CSS configuration
+│   ├── postcss.config.js        # PostCSS configuration for Tailwind
+│   └── .env                     # Frontend environment variables (e.g., REACT_APP_API_URL)
+├── .gitignore
+├── README.md                    # Project setup instructions
+└── docker-compose.yml           # (Optional) For containerized development/deployment
