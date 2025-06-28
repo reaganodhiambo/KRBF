@@ -3,7 +3,7 @@ import { Mail, Phone, MapPin, Send } from 'lucide-react';
 const Contact = () => {
   return (
     <section id="contact" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-sky-100 via-white to-blue-200 py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-slide-up">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
             Get In <span className="bg-gradient-to-r from-gray-600 to-sky-600 bg-clip-text text-transparent">Touch</span>

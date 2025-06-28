@@ -1,10 +1,12 @@
 import React from 'react'
 import { fixtures } from '../../assets/data';
+import { Link } from 'react-router-dom';
+import { PrimaryButton } from '../Buttons';
 import { Calendar, Clock, MapPin } from 'lucide-react';
 
 export const Fixtures = () => {
     return (
-        <section className='flex flex-col justify-center items-center min-h-screen bg-sky-50 px-4 lg:px-8 my-4 md:py-16'>
+        <section className='min-h-screen mt-20 sm:mt-10 flex flex-col justify-center items-center bg-sky-50 px-4 lg:px-8 my-4 md:py-16'>
             <div className="flex flex-col container">
                 <h2 className="text-4xl md:text-6xl text-center font-bold text-sky-700 mb-4 md:mb-10 leading-tight">
                     Upcoming Fixtures
@@ -80,7 +82,12 @@ export const Fixtures = () => {
                         </div>
                     ))}
                 </div>
+                <div className="flex items-center justify-center sm:mt-7">
+                <PrimaryButton as={Link} to="/standings" >
+                    View All Fixtures
+                </PrimaryButton>
             </div>
+                </div>
         </section>
     );
 }

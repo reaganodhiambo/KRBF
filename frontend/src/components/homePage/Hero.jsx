@@ -5,7 +5,7 @@ import { Calendar, Activity, Users } from 'lucide-react';
 
 export default function Hero() {
   return (
-    <section className=" mx-4 min-h-screen py-[100px] md:my-auto flex flex-col justify-center items-center bg-white px-4 overflow-hidden">
+    <section className="bg-gradient-to-r from-white-50 to-sky-100 mx-4 min-h-screen py-[100px] md:my-auto flex flex-col justify-center items-center bg-white px-4 overflow-hidden">
         <h1 className="text-5xl text-center max-w-4xl sm:text-7xl font-extrabold text-sky-700 mb-4 leading-tight">
           Kenya RollBall Federation
         </h1>

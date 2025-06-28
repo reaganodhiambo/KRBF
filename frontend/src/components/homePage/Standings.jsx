@@ -12,19 +12,19 @@ const tabClasses = (active) =>
 const formBadge = (result) => {
   switch (result) {
     case 'W':
-      return 'bg-green-100 text-green-700';
+      return 'bg-green-200 text-green-700';
     case 'D':
-      return 'bg-yellow-100 text-yellow-700';
+      return 'bg-yellow-200 text-yellow-700';
     case 'L':
-      return 'bg-red-100 text-red-700';
+      return 'bg-red-200 text-red-700';
     default:
-      return 'bg-gray-100 text-gray-700';
+      return 'bg-gray-200 text-gray-700';
   }
 };
 
 const getRowBg = (idx) => {
   if (idx < 4) return 'bg-gradient-to-r from-green-50 to-green-100'; // Championship
-  if (idx < 6) return 'bg-gradient-to-r from-sky-50 to-sky-100'; // Playoff
+  if (idx < 7) return 'bg-gradient-to-r from-sky-50 to-sky-100'; // Playoff
   return 'bg-white'; // Regular
 };
 
@@ -34,10 +34,10 @@ const Standings = () => {
 
   return (
     <section className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-gray-50 via-white to-sky-50 py-20 px-4">
-      <div className="max-w-5xl w-full mx-auto">
+      <div className="max-w-7xl w-full mx-auto">
         <div className="text-center mb-12 animate-slide-up">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-            League <span className="bg-gradient-to-r from-sky-600 to-amber-500 bg-clip-text text-transparent">Standings</span>
+          <h2 className="text-4xl md:text-5xl font-bold text-sky-700 mb-4">
+            League Standings
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Track your favorite teams' performance throughout the season.
@@ -92,7 +92,7 @@ const Standings = () => {
         </div>
         {/* Legend */}
         <div className="flex flex-wrap gap-4 mt-8 justify-center text-sm">
-          <span className="flex items-center gap-2"><span className="w-4 h-4 rounded bg-green-100 inline-block"></span> Playoff Positions</span>
+          <span className="flex items-center gap-2"><span className="w-4 h-4 rounded bg-green-200 inline-block"></span> Playoff Positions</span>
           <span className="flex items-center gap-2"><span className="w-4 h-4 rounded bg-gray-100 inline-block"></span> Regular Positions</span>
         </div>
       </div>

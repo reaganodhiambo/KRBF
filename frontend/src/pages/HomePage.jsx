@@ -5,8 +5,8 @@ export default function HomePage() {
   return (
     <main>
       <Hero />
-      <Fixtures />
       <Standings />
+      <Fixtures />
     </main>
   );
 }

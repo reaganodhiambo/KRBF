@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import {Menu, X} from 'lucide-react'
 import { Link, NavLink } from 'react-router-dom';
 import { navItems } from '../assets/data';
-
+import logo from '../assets/images/logo.jpeg';
 
 
 export default function Navbar() {
@@ -12,7 +12,7 @@ export default function Navbar() {
     <header className="w-full bg-white/50 shadow-md fixed top-0 left-0 z-50 backdrop-blur-md">
       <div className="mx-auto flex items-center justify-between container h-16">
         <Link to="/" className="text-2xl font-bold text-sky-700 select-none">
-          KRBF
+          <img src={logo} alt="KRBF Logo" className="h-14 w-auto inline-block align-middle mx-4" />
         </Link>
         
         {/* desktop nav */}
