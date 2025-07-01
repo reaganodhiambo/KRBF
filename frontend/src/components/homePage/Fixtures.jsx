@@ -83,7 +83,7 @@ export const Fixtures = () => {
                     ))}
                 </div>
                 <div className="flex items-center justify-center sm:mt-7">
-                <PrimaryButton as={Link} to="/standings" >
+                <PrimaryButton as={Link} to="/fixtures" >
                     View All Fixtures
                 </PrimaryButton>
             </div>

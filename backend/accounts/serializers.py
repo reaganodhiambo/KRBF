@@ -67,7 +67,7 @@ class UserRegistrationSerializer(serializers.ModelSerializer):
         extra_kwargs = {"password": {"write_only": True}}
 
     def validate(self, data):
-        if data["password"] != data["password2"]:
+        if data["password"] != data["password_confirm"]:
             raise serializers.ValidationError(
                 {"password": "Password fields didn't match."}
             )
